@@ -1,0 +1,102 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<style>
+    .w3-green {
+        background-color: green;
+    }
+
+    img {
+        padding: 1%;
+    }
+    .success {
+        background-color: #FFF3A3; /* Green */
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 4px 2px;
+        display:block;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    .success {
+        background-color: white;
+        color: black;
+        border: 2px solid #FFF3A3;
+    }
+
+        .success:hover {
+            background-color: #FFF3A3;
+            color: white;
+        }
+
+</style>
+<h3 style="text-align:center;">You have @ViewBag.EOS EOS and @ViewBag.Items items.</h3>
+<div class="container" style="display:inline;">
+    <div class="col-lg-6"> <img src="https://secure.i.telegraph.co.uk/multimedia/archive/03597/POTD_chick_3597497k.jpg" width="100%" height="100%" /></div>
+
+    <div class="col-lg-6" style="float:right; width:50%;display:inline;">
+        <h4>Funding</h4>
+        <hr />
+        <h1>70mai Dash Cam Pro-Vehicles' Hidden Guardian</h1>
+        <h3>24/7 Recording &Surveillance | 2.7K Resolution | Advanced Driver-Assistance System | Night Vision</h3>
+        <p>PROJECT OWNER</p>
+        <p>Blah Blah Blah</p>
+        <h4>109,500</h4>
+        <div class="w3-border">
+            <div class="w3-green" style="height:22px;width:60%"></div>
+        </div>
+    </div>
+</div>
+<div class="container">
+
+    <div class="col-lg-6">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Info</a></li>
+            <li><a data-toggle="tab" href="#menu1">Update</a></li>
+            <li><a data-toggle="tab" href="#menu2">Exchange</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <h3>Info</h3>
+                <p>We’re Morrison and we make high quality sneakers with exclusive and disruptive designs, always with a focus on fair working conditions for the people who make our sneakers. Morrison sneakers are handmade in Spain using the best materials, and our sneakers stand out for their comfort, style and fair production process. </p>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <h3>Primeras 24H, esto no ha hecho más que comenzar...</h3>
+                <p>
+                    Hello everybody,
+                </p>
+                <p>
+                    We are really happy with these first 24H of campaign. The welcome of the new collection is being amazing, we have almost achieved half of our goal on this first day. We know that this is a long-distance race, that's why we encourage you to share the campaign so that together we can reach as many people as possible. Thanks a lot for supporting us.Morrison team
+                </p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div id="menu3" class="tab-pane fade">
+                <h3>Menu 3</h3>
+                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <h3 style="margin:0px;" class="text-center">Rewards</h3>
+        <hr />
+        <a href="/Home/TakeAway" style="font-family:'Niagara Engraved';font-size:16px;" class="center-block btn-group-lg success button ">
+            Buy 1 for 10 EOS
+        </a>
+        <a href="/Home/TakeAway" style="font-family:'Niagara Engraved'; font-size:16px;" class="center-block btn-group-lg success button ">
+            Buy 2 for 20 EOS
+        </a>
+        <a href="/Home/TakeAway"style="font-family:'Niagara Engraved'; font-size:16px;" class="center-block btn-group-lg success button ">
+            Buy 3 for 50 EOS
+        </a>
+    </div>
+</div>

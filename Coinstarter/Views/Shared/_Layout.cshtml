@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style>
+        body {
+            width: 100%;
+        }
+
+        .nav {
+            width: 100%;
+        }
+
+        .navbar-nav > li {
+            float: inherit;
+            left: 43%;
+        }
+
+
+        .navbar-inverse {
+            background-color: #1C293A;
+            font-family: Impact, fantasy;
+        }
+
+            .navbar-inverse .navbar-nav > li > a {
+                color: #FFF3A3;
+                font-family: Impact, fantasy;
+            }
+        a {
+            color: #FFF3A3;
+            font-family: Jazz LET, fantasy;
+        }
+
+            .navbar-inverse .navbar-brand {
+                color: #FFF3A3;
+                font-family: Impact, fantasy;
+            }
+    </style>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @*@Html.ActionLink("Coinstarter", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    @*<li>@Html.ActionLink("Info", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Update Feed", "About", "Home")</li>
+                        <li>@Html.ActionLink("Exchange", "Contact", "Home")</li>*@
+                    <li><h4 style="margin-top: 13%; text-align:center;font-family: Century Gothic,sans-serif; font-weight:500;">@Html.ActionLink("Coinstarter", "Index", "Home")</h4></li>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+
+
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
