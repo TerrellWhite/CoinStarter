@@ -17,8 +17,8 @@ namespace Coinstarter.Controllers
         public ActionResult Index()
         {
             
-            usersEntities ORM = new usersEntities();
-            ViewBag.User = ORM.users;
+            //usersEntities ORM = new usersEntities();
+            //ViewBag.User = ORM.users;
             return View();
         }
 
@@ -35,28 +35,28 @@ namespace Coinstarter.Controllers
 
             return View();
         }
-        public ActionResult TakeAway(string name)
+        public ActionResult TakeAway(/*string name*/)
         {
-            usersEntities ORM = new usersEntities();
-            user UserEdit = ORM.users.Find(name);
-            if (UserEdit == null)
-            {
-                return RedirectToAction("AdminArtist");
-            }
-            ViewBag.User = UserEdit;
+            //usersEntities ORM = new usersEntities();
+            //user UserEdit = ORM.users.Find(name);
+            //if (UserEdit == null)
+            //{
+            //    return RedirectToAction("AdminArtist");
+            //}
+            //ViewBag.User = UserEdit;
             return View();
         }
-        public ActionResult HowMany(user Updateduser, int num)
+        public ActionResult HowMany(/*user Updateduser,*/ int num)
         {
-            usersEntities ORM = new usersEntities(); //need this is every operation that takes in information
-            //find the old record
-            user OldRecord = ORM.users.Find(Updateduser.name);
-            Updateduser.eos = OldRecord.eos - (num * 10);
-            Updateduser.items = OldRecord.items + num;
-            OldRecord.eos = Updateduser.eos;
-            OldRecord.items = Updateduser.items;
-            ORM.Entry(OldRecord).State = System.Data.Entity.EntityState.Modified;
-            ORM.SaveChanges();
+            //usersEntities ORM = new usersEntities(); //need this is every operation that takes in information
+            ////find the old record
+            //user OldRecord = ORM.users.Find(Updateduser.name);
+            //Updateduser.eos = OldRecord.eos - (num * 10);
+            //Updateduser.items = OldRecord.items + num;
+            //OldRecord.eos = Updateduser.eos;
+            //OldRecord.items = Updateduser.items;
+            //ORM.Entry(OldRecord).State = System.Data.Entity.EntityState.Modified;
+            //ORM.SaveChanges();
             return RedirectToAction("Index");
         }
     }

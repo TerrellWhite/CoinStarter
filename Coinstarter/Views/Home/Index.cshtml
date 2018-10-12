@@ -60,7 +60,7 @@
             color: white;
         }
 </style>
-@{int eos = 0; }
+@*@{int eos = 0; }
 @{int items = 0; }
 @{string name = ""; }
 @foreach (var stuff in ViewBag.User)
@@ -68,8 +68,8 @@
     eos = stuff.eos;
     items = stuff.items;
     name = stuff.name;
-}
-<h3 style="text-align:center;">You have @eos EOS and @items items.</h3>
+}*@
+@*<h3 style="text-align:center;">You have @eos EOS and @items items.</h3>*@
 <div class="container" style="display:inline;">
     <div class="col-lg-6"><iframe style="border:1px solid; box-shadow: 5px 10px #888888;" class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?url=http%3A%2F%2Forbitvu.co%2F001%2FoiCSFKWar6foHSFtgvMPbR%2Fov3601%2F3%2Fscript%3Fwidth%3Dauto%26height%3Dauto%26content2%3Dyes%26partial_load%3Dyes&amp;src=%2F%2Forbitvu.co%2F001%2FoiCSFKWar6foHSFtgvMPbR%2Fov3601%2F3%2Fiframe%3Fwidth%3Dauto%26height%3Dauto%26content2%3Dyes%26partial_load%3Dyes&amp;type=text%2Fhtml&amp;key=d3cf44f504524614bc66d6797c5dd848&amp;schema=orbitvu" width="530px" height="500px" scrolling="no" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="true"></iframe></div>
 
@@ -135,7 +135,7 @@
 
                     </div>
                 </div>
-                <a href="/Home/TakeAway?name=@name" style="font-family:'Niagara Engraved'; font-size:16px;" class="center-block btn-group-lg success button ">
+                <a href="/Home/TakeAway" style="font-family:'Niagara Engraved'; font-size:16px;" class="center-block btn-group-lg success button ">
                  Support Now!
                 </a>
                 <h3 class="text-center">Check Out Our Rewards On The Right</h3>
@@ -175,9 +175,9 @@
         </div>
         <p style="color: #FFF3A3; text-shadow: 0.5px 0.5px 1px white, 0 0 25px white, 0 0 1px white;">13 supporter spots left</p>
 
-        <a href="/Home/TakeAway?name=@name" style="font-family:'Niagara Engraved'; font-size:16px;" class="center-block btn-group-lg success button ">
+        @*<a href="/Home/TakeAway?name=@name" style="font-family:'Niagara Engraved'; font-size:16px;" class="center-block btn-group-lg success button ">
             Support Now!
-        </a>
+        </a>*@
         <br/>
     </div>
 </div>
